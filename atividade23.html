@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://img.magnific.com/vetores-gratis/fundo-de-tecnologia-digital-de-fio-de-malha-de-rede_1017-27428.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center w-100 vh-100">
+    <div class="form w-25 bg-secondary bg-opacity-25 rounded-3 w-25 h-75 p-5">
+        <h1 class="text-center m-5">Formulário</h1>
+        <div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome Completo">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Examplo mensagem</label>
+                <textarea class="form-control msg" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="col-12 text-center mt-5">
+            <button class="btn btn-primary w-50 p-2 mt-5 fs-5" type="submit" onclick="enviar()">Enviar</button>
+        </div>
+    </div>
+    <script>
+        function enviar(){
+            msg = document.querySelector(".msg").value
+            alert("Seu formulario foi enviado! Mensagem: " + msg)
+        }
+    </script>
+</body>
+
+</html>
