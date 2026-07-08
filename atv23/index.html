@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário Clientes</h1>
+        <form action="salvar_cliente.php" method="post">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" step="any" id="nome" name="nome" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" step="any" id="idade" name="idade" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" step="any" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" step="any" id="telefone" name="telefone" placeholder="(00)90000-0000"required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" step="any" id="cidade" name="cidade" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
