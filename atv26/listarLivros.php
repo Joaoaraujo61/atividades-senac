@@ -24,12 +24,12 @@
 
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Título</th>
                     <th>Autor</th>
                     <th>Editora</th>
                     <th>Ano</th>
                     <th>Quantidade</th>
+                    <th></th>
                 </tr>
             </thead>
 
